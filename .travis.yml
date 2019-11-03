@@ -38,6 +38,7 @@ jobs:
     - stage: 'Tests'
       name: 'Tests'
       before_install:
+        - export TZ=America/Chicago
         - npm install -g codecov
       script:
         - npm run lint:hbs
