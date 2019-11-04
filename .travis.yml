@@ -51,11 +51,23 @@ jobs:
     # as well as latest stable release (bonus points to beta/canary)
     - stage: 'Additional Tests'
       env: EMBER_TRY_SCENARIO=ember-lts-3.4
+      before_install:
+        - export TZ=America/Chicago
     - env: EMBER_TRY_SCENARIO=ember-lts-3.8
+      before_install:
+        - export TZ=America/Chicago
     - env: EMBER_TRY_SCENARIO=ember-release
+      before_install:
+        - export TZ=America/Chicago
     - env: EMBER_TRY_SCENARIO=ember-beta
+      before_install:
+        - export TZ=America/Chicago
     - env: EMBER_TRY_SCENARIO=ember-canary
+      before_install:
+        - export TZ=America/Chicago
     - env: EMBER_TRY_SCENARIO=ember-default-with-jquery
+      before_install:
+        - export TZ=America/Chicago
 
 script:
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO
