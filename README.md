@@ -30,6 +30,7 @@ Usage
 * [`datetime-get-utc-minutes`](#datetime-get-utc-minutes)
 * [`datetime-get-utc-month`](#datetime-get-utc-month)
 * [`datetime-get-utc-seconds`](#datetime-get-utc-seconds)
+* [`datetime-now`](#datetime-now)
 * [`datetime-to-date-string`](#datetime-to-date-string)
 * [`datetime-to-iso-string`](#datetime-to-iso-string)
 * [`datetime-to-locale-date-string`](#datetime-to-locale-date-string)
@@ -155,6 +156,13 @@ Return the UTC seconds of minute. See [Date.getUTCSeconds()](https://developer.m
 
 ```hbs
 {{datetime-get-utc-seconds value}}
+```
+
+#### `datetime-now`
+Returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC. See [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) for details on the Date.now() function.
+
+```hbs
+{{datetime-now}}
 ```
 
 #### `datetime-to-date-string`
