@@ -30,6 +30,7 @@ Usage
 * [`datetime-get-utc-minutes`](#datetime-get-utc-minutes)
 * [`datetime-get-utc-month`](#datetime-get-utc-month)
 * [`datetime-get-utc-seconds`](#datetime-get-utc-seconds)
+* [`datetime-now`](#datetime-now)
 * [`datetime-to-date-string`](#datetime-to-date-string)
 * [`datetime-to-iso-string`](#datetime-to-iso-string)
 * [`datetime-to-locale-date-string`](#datetime-to-locale-date-string)
@@ -157,6 +158,13 @@ Return the UTC seconds of minute. See [Date.getUTCSeconds()](https://developer.m
 {{datetime-get-utc-seconds value}}
 ```
 
+#### `datetime-now`
+Returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC. See [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) for details on the Date.now() function.
+
+```hbs
+{{datetime-now}}
+```
+
 #### `datetime-to-date-string`
 Return the date string. See [Date.toDateString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString) for details on the Date.toDateString() function.
 
@@ -230,6 +238,7 @@ Related Addons
 ------------------------------------------------------------------------------
 * See [ember-array-fns](https://github.com/robert-allan-frank/ember-array-fns) for array based helpers.
 * See [ember-intl-fns](https://github.com/robert-allan-frank/ember-intl-fns) for internationalization based helpers.
+* See [ember-logic-fns](https://github.com/robert-allan-frank/ember-logic-fns) for logical based helpers.
 * See [ember-math-fns](https://github.com/robert-allan-frank/ember-math-fns) for math based helpers.
 * See [ember-number-fns](https://github.com/robert-allan-frank/ember-number-fns) for number based helpers.
 * See [ember-string-fns](https://github.com/robert-allan-frank/ember-string-fns) for string based helpers.
